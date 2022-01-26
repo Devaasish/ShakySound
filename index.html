@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShakySound</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="hiddenAudio">
+        <audio src="BlackSunrise.mp3" class="hiddenPlayingAudio" controls></audio>
+    </div>
+
+    <div class="songCard" id="draggable">
+        <div class="icon">
+            <i class='bx bxs-music' id="myIcon"></i>
+        </div>
+
+        <div class="musicColumn">
+            <h2 class="songName">Black Sunrise</h2>
+            <h3 class="songComposer">Andreas Stone & Denniz Jamm</h3>
+
+            <div class="musicHolder">
+                <div class="musicPlayer"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <img src="previous.png" class="previous" alt="Previous Song" />
+            <img src="play.png" class="play" alt="Play Song" />
+            <img src="pause.png" class="pause changer" alt="Pause Song" />
+            <img src="again.png" class="again" alt="Play Again" />
+            <img src="next.png" class="next" alt="Next Song" />
+        </div>
+    </div>
+</body>
+<script src="MusicApp.js"></script>
+<script src="Movement.js"></script>
+</html>

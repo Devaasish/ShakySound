@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Dongle', sans-serif;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 85vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 1000vh;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+
+.hiddenPlayingAudio {
+    display: none;
+    width: 0px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.songCard {
+    text-align: center;
+    background: #000047;
+    box-shadow: 0px 0px 25px #000;
+    padding: 10px;
+    border-radius: 10px;
+    animation: "";
+}
+
+.songCard img {
+    cursor: pointer;
+}
+
+.icon i {
+    color: #fff;
+    font-size: 120px;
+    padding: 15px;
+    animation: "";
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.musicColumn .songName {
+    font-size: 70px;
+    padding: 0px 15px 0px 15px;
+    color: yellow;
+}
+
+.musicColumn .songComposer {
+    font-size: 30px;
+    padding: 0px 20px 0px 20px;
+    color: yellow;
+}
+
+.musicColumn .musicHolder {
+    background: #ddd;
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 30px 20px 20px 20px;
+}
+
+.musicColumn .musicHolder .musicPlayer {
+    background: linear-gradient(145deg, #22bdc3 0%, #1400ff 100%);
+    width: 0px;
+    height: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: move;
+}
+
+.buttons {
+    padding-top: 30px;
+}
+
+.changer {
+    display: none;
+}
+
+.previous {
+    box-shadow: 0px 20px 20px #000;
+    background: none;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.previous:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.play {
+    box-shadow: 0px 20px 20px #000;
+    background: none;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.play:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.pause {
+    box-shadow: 0px 20px 20px #000;
+    background: none;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.pause:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.next {
+    box-shadow: 0px 20px 20px #000;
+    background: none;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.next:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.again {
+    box-shadow: 0px 20px 20px #000;
+    background: none;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.again:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
