@@ -9,9 +9,9 @@ var songCard = document.querySelector('.songCard');
 var musicPlayer = document.querySelector('.musicPlayer');
 var musicHolder = document.querySelector('.musicHolder');
 
-var songs = ["BlackSunrise", "Dreams", "WaitForMe", "SkyHigh", "Crazy", "FeelAgain", "Remember", "BlindingLights", "faded"]
-var names = ["Black Sunrise", "Dreams", "Wait For Me", "Sky High", "Crazy", "Feel Again", "Remember", "Blinding Lights", "Faded"]
-var artists = ["Andreas Stone & Denniz Jamm", "Sara Skinner", "Doctor Neiman & Micah Martin", "Elektrinimia", "Beauz & Jvna", "Harley Bird", "Levianth & Axol", "The Weekend", "Alan Walker"]
+var songs = ["distodd", "BlackSunrise", "Dreams", "WaitForMe", "SkyHigh", "Crazy", "FeelAgain", "Remember", "BlindingLights", "faded"]
+var names = ["Distodd", "Black Sunrise", "Dreams", "Wait For Me", "Sky High", "Crazy", "Feel Again", "Remember", "Blinding Lights", "Faded"]
+var artists = ["Disto & Todd Helder", "Andreas Stone & Denniz Jamm", "Sara Skinner", "Doctor Neiman & Micah Martin", "Elektronimia", "Beauz & Jvna", "Harley Bird", "Levianth & Axol", "The Weekend", "Alan Walker"]
 
 var music = document.querySelector('audio');
 
