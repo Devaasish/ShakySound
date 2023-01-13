@@ -104,7 +104,6 @@ next.addEventListener("click", () => {
 previous.addEventListener("click", () => {
     songIndex = songIndex - 1;
     nameIndex = nameIndex - 1;
-//     artistIndex = artistIndex - 1;
 
     pause.classList.remove("changer");
     play.classList.add("changer");
