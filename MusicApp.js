@@ -111,7 +111,7 @@ next.addEventListener("click", () => {
 
     music.src = songs[songIndex] + ".mp3";
     songName.innerText = names[nameIndex];
-    songComposer.innerText = artists[artistIndex];
+//     songComposer.innerText = artists[artistIndex];
     music.play();
 });
 
@@ -138,6 +138,6 @@ previous.addEventListener("click", () => {
 
     music.src = songs[songIndex] + ".mp3";
     songName.innerText = names[nameIndex];
-    songComposer.innerText = artists[artistIndex];
+//     songComposer.innerText = artists[artistIndex];
     music.play();
 });
