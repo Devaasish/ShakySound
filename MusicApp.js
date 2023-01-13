@@ -9,8 +9,8 @@ var songCard = document.querySelector('.songCard');
 var musicPlayer = document.querySelector('.musicPlayer');
 var musicHolder = document.querySelector('.musicHolder');
 
-var songs = ["distodd", "BlackSunrise", "Dreams", "WaitForMe", "SkyHigh", "Crazy", "FeelAgain", "Remember", "BlindingLights", "faded"]
-var names = ["Distodd", "Black Sunrise", "Dreams", "Wait For Me", "Sky High", "Crazy", "Feel Again", "Remember", "Blinding Lights", "Faded"]
+var songs = ["VarahaRoopam", "PeddaPuli", "TamilFolkDance-MadrasWeek", "DiaDiaDole", "TELANGANADAPPULU", "Bhangra", "KannadaFolk", "NagadaSangDhol", "BulletuBandi", "Mirzapunjabifolk"]
+var names = ["Varaha Roopam", "Pedda Puli", "Tamil Folk Dance - Madras Week", "Dia Dia Dole", "Telangana Dappulu", "Bhangra", "Kannada Folk", "Nagada Sang Dhol", "Bulletu Bandi", "Mirza Punjabi Folk"]
 var artists = ["Disto & Todd Helder", "Andreas Stone & Denniz Jamm", "Sara Skinner", "Doctor Neiman & Micah Martin", "Elektronimia", "Beauz & Jvna", "Harley Bird", "Levianth & Axol", "The Weekend", "Alan Walker"]
 
 var music = document.querySelector('audio');
@@ -54,7 +54,7 @@ music.addEventListener("ended", () => {
 
     music.src = songs[songIndex] + ".mp3";
     songName.innerText = names[nameIndex];
-    songComposer.innerText = artists[artistIndex];
+//     songComposer.innerText = artists[artistIndex];
     music.play();
 });
 
