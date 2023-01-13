@@ -19,7 +19,6 @@ var songComposer = document.querySelector('.songComposer');
 
 var songIndex = 0;
 var nameIndex = 0;
-// var artistIndex = 0;
 
 myIcon.style.animation = "";
 
@@ -37,7 +36,6 @@ music.addEventListener("timeupdate", () => {
 music.addEventListener("ended", () => {
     songIndex = songIndex + 1;
     nameIndex = nameIndex + 1;
-//     artistIndex = artistIndex + 1;
 
     if (songIndex > songs.length - 1) {
         songIndex = 0;
@@ -47,13 +45,8 @@ music.addEventListener("ended", () => {
         nameIndex = 0;
     }
 
-//     if (artistIndex > artists.length - 1) {
-//         artistIndex = 0;
-//     }
-
     music.src = songs[songIndex] + ".mp3";
     songName.innerText = names[nameIndex];
-//     songComposer.innerText = artists[artistIndex];
     music.play();
 });
 
@@ -90,7 +83,6 @@ pause.onclick = function change() {
 next.addEventListener("click", () => {
     songIndex = songIndex + 1;
     nameIndex = nameIndex + 1;
-//     artistIndex = artistIndex + 1;
 
     pause.classList.remove("changer");
     play.classList.add("changer");
@@ -104,13 +96,8 @@ next.addEventListener("click", () => {
         nameIndex = 0;
     }
 
-//     if (artistIndex > artists.length - 1) {
-//         artistIndex = 0;
-//     }
-
     music.src = songs[songIndex] + ".mp3";
     songName.innerText = names[nameIndex];
-//     songComposer.innerText = artists[artistIndex];
     music.play();
 });
 
@@ -131,12 +118,7 @@ previous.addEventListener("click", () => {
         nameIndex = names.length - 1;
     }
 
-    if (artistIndex < 0) {
-        artistIndex = artists.length - 1;
-    }
-
     music.src = songs[songIndex] + ".mp3";
     songName.innerText = names[nameIndex];
-//     songComposer.innerText = artists[artistIndex];
     music.play();
 });
