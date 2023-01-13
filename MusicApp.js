@@ -9,9 +9,8 @@ var songCard = document.querySelector('.songCard');
 var musicPlayer = document.querySelector('.musicPlayer');
 var musicHolder = document.querySelector('.musicHolder');
 
-var songs = ["VarahaRoopam", "PeddaPuli", "TamilFolkDance-MadrasWeek", "DiaDiaDole", "TELANGANADAPPULU", "Bhangra", "KannadaFolk", "NagadaSangDhol", "BulletuBandi", "Mirzapunjabifolk"]
-var names = ["Varaha Roopam", "Pedda Puli", "Tamil Folk Dance - Madras Week", "Dia Dia Dole", "Telangana Dappulu", "Bhangra", "Kannada Folk", "Nagada Sang Dhol", "Bulletu Bandi", "Mirza Punjabi Folk"]
-var artists = ["Disto & Todd Helder", "Andreas Stone & Denniz Jamm", "Sara Skinner", "Doctor Neiman & Micah Martin", "Elektronimia", "Beauz & Jvna", "Harley Bird", "Levianth & Axol", "The Weekend", "Alan Walker"]
+var songs = ["VarahaRoopam", "PeddaPuli", "TamilFolk Dance-Madras Week", "DiaDiaDole", "TELANGANADAPPULU", "Bhangra", "KannadaFolk", "NagadaSangDhol", "BullettuBandi", "Mirzapunjabifolk"]
+var names = ["Varaha Roopam", "Pedda Puli", "Tamil Folk Dance", "Dia Dia Dole", "Telangana Dappulu", "Bhangra", "Kannada Folk", "Nagada Sang Dhol", "Bulletu Bandi", "Mirza Punjabi Folk"]
 
 var music = document.querySelector('audio');
 
@@ -66,7 +65,7 @@ musicHolder.addEventListener("click", (e) => {
     music.currentTime = clickX / width * duration;
 });
 
-musicPlayer.addEventListener("ondrag", () => {
+musicPlayer.addEventListener("ondrag", (e) => {
     const width = musicHolder.clientWidth;
     const clickX = e.offsetX;
     const duration = music.duration;
